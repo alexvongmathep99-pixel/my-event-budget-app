@@ -1,11 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite' // 1. ເພີ່ມແຖວນີ້
+import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(), // 2. ເພີ່ມແຖວນີ້
-  ],
+  plugins: [react(), tailwindcss()],
+  base: '/my-event-budget-app/', // ⚠️ ຕ້ອງມີແຖວນີ້ເພື່ອໃຫ້ GitHub Pages ອ່ານ Path ຖືກຕ້ອງ
 })
