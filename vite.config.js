@@ -2,8 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/my-event-budget-app/', // ⚠️ ຕ້ອງມີແຖວນີ້ເພື່ອໃຫ້ GitHub Pages ອ່ານ Path ຖືກຕ້ອງ
+  base: '/my-event-budget-app/', // ⚠️ ຫ້າມລືມເຄື່ອງໝາຍ ຈຸດ (,) ທາງທ້າຍເດີ້
 })
